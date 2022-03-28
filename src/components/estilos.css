@@ -1,0 +1,28 @@
+.logo{
+    width: 70px;
+    float: left;
+    align-items: center;
+}
+.navbar{
+    background-color: hsla(120, 100%, 30%, 0.3);
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.items li a{
+    font-size: 50px;
+    font-family: 'Hurricane', cursive;
+    margin: 0px 10px;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;  
+    color: #ff3434;
+}
+.items li a:active{
+    background-color: hsla(120, 100%, 30%, 0.1);    
+}
+
+
