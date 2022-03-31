@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 import "./estilos.css";
 
 
@@ -17,7 +18,10 @@ export default function NavBar() {
           <li><a href="#">Tienda</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-      </div>
+        
+        <CartWidget cant={10}/>
+
+      </div>      
     </>
   )
 };

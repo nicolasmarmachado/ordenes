@@ -24,5 +24,9 @@
 .items li a:active{
     background-color: hsla(120, 100%, 30%, 0.1);    
 }
-
+.carrito{
+    width: 70px;
+    float: left;
+    align-items: center;
+}
 
