@@ -29,4 +29,16 @@
     float: left;
     align-items: center;
 }
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+}
+.agregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 

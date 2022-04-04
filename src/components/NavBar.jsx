@@ -4,9 +4,9 @@ import "./estilos.css";
 
 
 export default function NavBar() {
+  
   return (
     <>  
-
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
       </style>

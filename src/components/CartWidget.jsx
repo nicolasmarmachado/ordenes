@@ -1,7 +1,6 @@
 import React from "react";
 import "./estilos.css";
 
-
 export default function CartWidget({cant}) {
   return (
     <>  
