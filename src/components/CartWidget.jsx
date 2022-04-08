@@ -1,10 +1,12 @@
 import React from "react";
 import "./estilos.css";
 
-export default function CartWidget({cant}) {
+export default function CartWidget() {
   return (
-    <>  
-        <img src="cart3.svg" alt="cartwidget" className="carrito"/>
+    <>
+      <div className="cartwidget"> 
+        <img src="cart3.svg" alt="cartwidget" className="carrito" />
+      </div>
     </>
-  )
+  );
 };

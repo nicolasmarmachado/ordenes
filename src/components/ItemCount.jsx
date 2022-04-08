@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./estilos.css";
 import Button from 'react-bootstrap/Button'
 
-
 export default function ItemCount({stock}) {
   const [contar, setContar]=useState(0);
 
@@ -27,7 +26,7 @@ export default function ItemCount({stock}) {
     <div>
       <div className="botones">  
         <Button variant="outline-info" onClick={restar}>-</Button>
-        <p>{contar}</p>
+        <p style={{margin: "10px"}}>{contar}</p>
         <Button variant="outline-info" onClick={sumar}>+</Button>
       </div>
       <div className="agregar">

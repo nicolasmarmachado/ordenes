@@ -2,7 +2,6 @@ import React from "react";
 import CartWidget from "./CartWidget";
 import "./estilos.css";
 
-
 export default function NavBar() {
   
   return (

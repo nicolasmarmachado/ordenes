@@ -41,4 +41,13 @@
     align-items: center;
     margin-bottom: 10px;
 }
+.card{
+    display: flex;
+    float: left;
+    margin: 10px;
+}
+.cardwidget{
+    display: flex;
+    align-items: center;
+}
 
