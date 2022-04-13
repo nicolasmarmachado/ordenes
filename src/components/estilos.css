@@ -42,12 +42,25 @@
     margin-bottom: 10px;
 }
 .card{
-    display: flex;
+    display: grid;
     float: left;
     margin: 10px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: min-content;
 }
-.cardwidget{
+.cartwidget{
     display: flex;
     align-items: center;
 }
+.card-detalle{
+    display: grid;
+    justify-items: center;
+}
+.botonDetalle{
+    justify-items: center;
+    margin: 10px;
+}
+
+
+
 

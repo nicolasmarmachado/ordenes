@@ -42,3 +42,12 @@ export const productos=[
         imagen: "https://i.ibb.co/HK16b1g/individual-negro.jpg"                 
       }, 
 ];
+
+export const producto1=
+  {   
+    id: 1,
+    titulo: "Cesto SOFIA",
+    descripción: "Cesto en tonos marrones hechos con cordón de algodón",
+    precio: "$600",
+    imagen: "https://i.ibb.co/VgTLGC7/cesto-1.jpg"
+  };
