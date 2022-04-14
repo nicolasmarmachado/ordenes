@@ -5,14 +5,14 @@ import ItemDetail from './ItemDetail';
 export default function ItemDetailContainer() {
   const [producto, setProducto]= useState({});
     
-  useEffect( ()=>{
+  useEffect(()=>{
+
     getItem()
-      .then((res)=>{
-        setProducto(res);
-      }); 
+      .then(res=>setProducto(res.find(p=>p.id===3)))
+      .catch(error => console.log(error));
   }, []);
 
-  return (
+    return (
     <>
       <ItemDetail producto= {producto} />
     </>

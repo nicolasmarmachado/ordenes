@@ -8,9 +8,9 @@ export default function Item({prod}) {
   return (
     <>
       <div className='card'>
-        <Card style={{width:"14em"}} key={prod.id}>
+        <Card style={{width:"23em"}} key={prod.id}>
           <Card.Body >
-            <Card.Title>{prod.titulo}</Card.Title>
+            <Card.Title style={{width:"16em"}}>{prod.titulo}</Card.Title>
             {/* <Card.Text>
               <p>{prod.descripción}</p>
               <p>{prod.precio}</p>
