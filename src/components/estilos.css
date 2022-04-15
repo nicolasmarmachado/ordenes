@@ -1,46 +1,80 @@
+body{
+    background: radial-gradient(circle, blue);
+}
+
 .logo{
     width: 70px;
     float: left;
     align-items: center;
 }
+
 .navbar{
     background-color: hsla(120, 100%, 30%, 0.3);
 }
+
+.navbar div a{
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+}
+
 .items{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
 }
+
 .items li a{
     font-size: 50px;
     font-family: 'Hurricane', cursive;
-    margin: 0px 10px;
+    margin: 10px;
     display: inline-block;
     align-items: center;
     text-decoration: none;  
     color: #ff3434;
 }
+
 .items li a:active{
     background-color: hsla(120, 100%, 30%, 0.1);    
 }
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 30px;
+    font-family: 'Hurricane', cursive;
+    align-items: center;
+}
+
+.categorias li a{
+    text-decoration: none; 
+    color: #ff3434;
+    margin: 10px;
+    font-size: 50px;
+}
+
 .carrito{
     width: 70px;
     float: left;
     align-items: center;
 }
+
 .botones{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px ;
 }
+
 .agregar{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .card{
     display: grid;
     float: left;
@@ -49,14 +83,17 @@
     grid-template-rows: min-content;
     width: 24.5em;
 }
+
 .cartwidget{
     display: flex;
     align-items: center;
 }
+
 .card-detalle{
     display: grid;
     justify-items: center;
 }
+
 .botonDetalle{
     justify-items: center;
     margin: 10px;

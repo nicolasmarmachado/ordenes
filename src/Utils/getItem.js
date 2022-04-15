@@ -1,9 +1,12 @@
 import { productos } from "./productos.js";
 
-export const getItem = () => {
+export const getItem = (id) => {
     return new Promise ( (resolve, reject)=>{
+        const productoElegido = productos.find(
+            (producto) => producto.id === Number(id)
+        );
         setTimeout (()=>{
-            resolve(productos);}, 2000);
+            resolve(productoElegido);}, 2000);
      });
 } 
 

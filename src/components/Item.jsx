@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 // import ItemCount from './ItemCount';
 import "./estilos.css";
 
@@ -19,7 +20,7 @@ export default function Item({prod}) {
               <Card.Img variant="top" src={prod.imagen} />
             </div>
             {/* <ItemCount stock={5}/> */}
-            <Button className='botonDetalle'>Ver detalle</Button>
+            <Link to={`/item/${prod.id}`}>Ver detalle </Link>
           </Card.Body>
         </Card>
       </div>

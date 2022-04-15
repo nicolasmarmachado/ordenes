@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import { getItem } from '../Utils/getItem';
 import ItemDetail from './ItemDetail';
 
 export default function ItemDetailContainer() {
-  const [producto, setProducto]= useState({});
-    
-  useEffect(()=>{
+  const [item, setItem] = useState({});
+  const { id } = useParams();
 
-    getItem()
-      .then(res=>setProducto(res.find(p=>p.id===3)))
-      .catch(error => console.log(error));
-  }, []);
+  useEffect(() => {
+    getItem(id)
+      .then((res) => {
+        setItem(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [id]);
 
-    return (
-    <>
-      <ItemDetail producto= {producto} />
-    </>
-  );
-}
+   return (
+     <>
+       <ItemDetail item={item} />
+     </>
+   );
+};

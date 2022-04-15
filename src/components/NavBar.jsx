@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import "./estilos.css";
 
@@ -13,9 +14,20 @@ export default function NavBar() {
       <div className="navbar">        
         <img src="logo_NI.jpg" alt="logo" className="logo"/>
         <ul className="items">
-          <li><a href="#">Quienes somos</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#">Contacto</a></li>
+                    <li><Link to="/">Quienes somos</Link></li>
+          <li><Link to="/">Tienda</Link></li>
+          <li><Link to="/">Contacto</Link></li>
+        </ul>
+
+        <div>
+          <Link to="/">Home</Link>
+        </div>
+        
+        <ul className="categorias">
+          <li><Link to="/categorias/cestos">Cestos</Link></li>
+          <li><Link to="/categorias/llaveros">Llaveros</Link></li>
+          <li><Link to="/categorias/paneras">Paneras</Link></li>
+          <li><Link to="/categorias/individuales">Individuales</Link></li>
         </ul>
         
         <CartWidget cant={10}/>
