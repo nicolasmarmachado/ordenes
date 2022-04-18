@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import "./estilos.css";
 import Button from 'react-bootstrap/Button'
 
-export default function ItemCount({stock}) {
+export default function ItemCount({stock, onAdd }) {
   const [contar, setContar]=useState(0);
 
   function sumar(){
@@ -16,9 +16,9 @@ export default function ItemCount({stock}) {
       setContar(contar - 1);
     }
   }
-
-  function onAdd(){
-    alert("Se han agregado " + contar + " items al carrito");
+  
+  function handleClick(){
+    onAdd(contar)
   }
 
   return (
@@ -30,9 +30,10 @@ export default function ItemCount({stock}) {
         <Button variant="outline-info" onClick={sumar}>+</Button>
       </div>
       <div className="agregar">
-        <Button variant="outline-success" onClick={onAdd} >Agregar al carrito</Button>
+        <Button variant="outline-success" onClick={handleClick} >Agregar al carrito</Button>
       </div>
     </div>
+
     </> 
   )
 }; 

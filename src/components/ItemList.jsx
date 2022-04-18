@@ -4,7 +4,7 @@ import Item from './Item'
 export default function ItemList({producto}) {
   return (
     <>
-      {producto.map( prod => <Item prod={prod}/> )}
+      {producto.map( prod => <Item key={prod.id} prod={prod}/>)}
     </>
   );
 };

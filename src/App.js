@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import {BrowserRouter,Routes, Route } from "react-router-dom";
 import "./App.css";
+import CartWidget from "./components/CartWidget";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route exact path="/" element={<ItemListContainer/>}/>
           <Route exact path="/categorias/:categoryId" element={<ItemListContainer/>}/>
           <Route exact path="/item/:id" element={<ItemDetailContainer/>}/>
+          <Route exact path="/cart" element={<CartWidget/>}/>
           
         </Routes>
       </BrowserRouter>

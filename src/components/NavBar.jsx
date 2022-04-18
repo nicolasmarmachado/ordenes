@@ -14,13 +14,13 @@ export default function NavBar() {
       <div className="navbar">        
         <img src="logo_NI.jpg" alt="logo" className="logo"/>
         <ul className="items">
-                    <li><Link to="/">Quienes somos</Link></li>
+          <li><Link to="/">Quienes somos</Link></li>
           <li><Link to="/">Tienda</Link></li>
           <li><Link to="/">Contacto</Link></li>
         </ul>
 
-        <div>
-          <Link to="/">Home</Link>
+        <div className="home">
+          <Link to="/">Inicio</Link>
         </div>
         
         <ul className="categorias">
