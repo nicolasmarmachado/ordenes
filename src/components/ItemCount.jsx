@@ -1,9 +1,12 @@
-import React, { useState} from "react";
+import React, { useState, useContext} from "react";
 import "./estilos.css";
 import Button from 'react-bootstrap/Button'
+import { Cartcontext } from "./CartContext";
 
-export default function ItemCount({stock, onAdd }) {
+export default function ItemCount({stock, onAdd, item}) {
   const [contar, setContar]=useState(0);
+
+  const {addItem}= useContext(Cartcontext);
 
   function sumar(){
     if(contar<stock){
@@ -19,6 +22,7 @@ export default function ItemCount({stock, onAdd }) {
   
   function handleClick(){
     onAdd(contar)
+    addItem({...item, cantidad: contar})
   }
 
   return (
@@ -30,7 +34,7 @@ export default function ItemCount({stock, onAdd }) {
         <Button variant="outline-info" onClick={sumar}>+</Button>
       </div>
       <div className="agregar">
-        <Button variant="outline-success" onClick={handleClick} >Agregar al carrito</Button>
+        <Button variant="outline-success" onClick={handleClick}>Agregar al carrito</Button>
       </div>
     </div>
 

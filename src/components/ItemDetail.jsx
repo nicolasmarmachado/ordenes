@@ -25,7 +25,7 @@ export default function ItemDetail({item}) {
               <Card.Img variant="top" src={item.imagen} />
             </div> 
 
-            {  number===0 ? <ItemCount stock={5} onAdd={onAdd} />: <Link to='/cart' className='botonDetalle'>Ir al carrito</Link> }
+            {  number===0 ? <ItemCount stock={5} onAdd={onAdd} item={item} />: <Link to='/cart' className='botonDetalle'>Ir al carrito</Link> }
             
           </Card.Body>
         </Card>

@@ -6,7 +6,7 @@ export const getItem = (id) => {
             (producto) => producto.id === Number(id)
         );
         setTimeout (()=>{
-            resolve(productoElegido);}, 2000);
+            resolve(productoElegido);}, 2000);        
      });
 } 
 
