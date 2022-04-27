@@ -30,7 +30,7 @@ export default function NavBar() {
           <li><Link to="/categorias/individuales">Individuales</Link></li>
         </ul>
         
-        <CartWidget cant={10}/>
+        <CartWidget/>
 
       </div>      
     </>

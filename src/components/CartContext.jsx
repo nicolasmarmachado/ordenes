@@ -16,17 +16,18 @@ const CartContextProvider = ({ children }) => {
       setCart([...cart, item]);
     }
   };
-  console.log(cart);
 
-  const removeItem = (id) => {
-    setCart(cart.filter((item) => item.id !== id));
+  const removeItem = (id) => {setCart(cart.filter(item => item.id !== id));
   };
 
   const clear = () => setCart([]);
 
+  const cantidadTotal=cart.reduce((total, item)=>total+item.cantidad, 0);
+  const valorTotal=cart.reduce((total, item)=>total+(item.cantidad*item.precio), 0);
+
   return (
     <>
-      <Cartcontext.Provider value={{ cart, addItem, removeItem, clear }}>
+      <Cartcontext.Provider value={{ cart, addItem, removeItem, clear, cantidadTotal, valorTotal}}>
         {children}
       </Cartcontext.Provider>
     </>

@@ -9,7 +9,7 @@ export const PromiseProductos = (categoryId) => {
     if (condition) {
       setTimeout(() => {
         categoryId ? resolve(productosFiltrados) : resolve(productos);
-      }, 2000);
+      }, 0);
     } else {
       reject(console.log("Error"));
     }

@@ -72,6 +72,20 @@ body{
     margin: 10px ;
 }
 
+.botonFinalizar{
+    font-size: 20px;
+    text-decoration: none;
+    justify-items: center;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    justify-items: center;
+    /* display: flex; */
+    justify-content: center;
+}
+
 .agregar{
     display: flex;
     justify-content: center;
@@ -98,10 +112,17 @@ body{
     display: flex;
     align-items: center;
 }
+.cartwidget b{
+    font-size: 30px;
+}
 
 .card-detalle{
     display: grid;
     justify-items: center;
+}
+.cardCarrito{
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .botonDetalle{
@@ -120,6 +141,19 @@ body{
 
 .botonDetalle:hover{
     color: white;
+}
+.botonCart{
+    font-size: 20px;
+    text-decoration: none;
+    justify-items: center;
+    margin: 10px;
+    background-color: rgba(0,0,260,0.9);
+    color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    justify-items: center;
+    /* display: flex; */
+    justify-content: center;
 }
 
 .home{

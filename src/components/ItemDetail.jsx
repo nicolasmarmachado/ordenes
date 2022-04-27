@@ -12,24 +12,30 @@ export default function ItemDetail({item}) {
   }
 
     return (
-    <>
-      <div className='card-detalle'>
-      <Card key={item.id}>
-          <Card.Body>
-            <Card.Title>{item.titulo}</Card.Title>
-            <Card.Text>
-              {item.descripción} <br/>
-              {item.precio}
-            </Card.Text>
-            <div>
-              <Card.Img variant="top" src={item.imagen} />
-            </div> 
+      <>
+        <div className="card-detalle">
+          <Card key={item.id}>
+            <Card.Body>
+              <Card.Title>{item.titulo}</Card.Title>
+              <Card.Text>
+                {item.descripción} <br />$ {item.precio}
+              </Card.Text>
+              <div>
+                <Card.Img variant="top" src={item.imagen} />
+              </div>
 
-            {  number===0 ? <ItemCount stock={5} onAdd={onAdd} item={item} />: <Link to='/cart' className='botonDetalle'>Ir al carrito</Link> }
-            
-          </Card.Body>
-        </Card>
-      </div>
-    </>
-  );
+              <ItemCount stock={5} onAdd={onAdd} item={item} />
+              <Link to="/cart" className="botonDetalle">
+                Ir al carrito
+              </Link>
+            </Card.Body>
+          </Card>
+          <div>
+            <Link to="/" className="botonCart">
+              Volver a TIENDA
+            </Link>
+          </div>
+        </div>
+      </>
+    );
 }
