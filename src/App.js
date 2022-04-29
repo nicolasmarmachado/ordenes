@@ -6,6 +6,8 @@ import {BrowserRouter,Routes, Route } from "react-router-dom";
 import "./App.css";
 import Cart from "./components/Cart";
 import CartContextProvider from "./components/CartContext";
+import FBGetProd from "./components/FBGetProd";
+import FBGetCollection from "./components/FBGetCollection";
 
 export default function App() {
 
@@ -15,8 +17,10 @@ export default function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
+            {/* <Route exact path="/products" element={<FBGetProd />} />
+            <Route exact path="/collection" element={<FBGetCollection />} /> */}
             <Route exact path="/" element={<ItemListContainer />} />
-            <Route exact path="/categorias/:categoryId"element={<ItemListContainer />} />
+            <Route exact path="/categorias/:id"element={<ItemListContainer />} />
             <Route exact path="/item/:id" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<Cart />} /> 
           </Routes>

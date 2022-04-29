@@ -4,7 +4,7 @@ import ItemCount from './ItemCount';
 import "./estilos.css";
 import { Link } from 'react-router-dom';
 
-export default function ItemDetail({item}) {
+export default function ItemDetail({product}) {
   const [number, setNumber]=useState(0);
 
   function onAdd(contar){
@@ -14,17 +14,17 @@ export default function ItemDetail({item}) {
     return (
       <>
         <div className="card-detalle">
-          <Card key={item.id}>
+          <Card key={product.id}>
             <Card.Body>
-              <Card.Title>{item.titulo}</Card.Title>
+              <Card.Title>{product.titulo}</Card.Title>
               <Card.Text>
-                {item.descripción} <br />$ {item.precio}
+                {product.descripción} <br />$ {product.precio}
               </Card.Text>
               <div>
-                <Card.Img variant="top" src={item.imagen} />
+                <Card.Img variant="top" src={product.imagen} />
               </div>
 
-              <ItemCount stock={5} onAdd={onAdd} item={item} />
+              <ItemCount stock={5} onAdd={onAdd} product={product} />
               <Link to="/cart" className="botonDetalle">
                 Ir al carrito
               </Link>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Cartcontext } from './CartContext';
 import "./estilos.css";
 
-// style={{width: "23em"}}
 export default function Cart() {
   const {cart, clear, removeItem, cantidadTotal, valorTotal}= useContext(Cartcontext);
 
@@ -15,16 +14,16 @@ export default function Cart() {
   return (
     <>
       {cart.length > 0
-        ? cart.map((item) => (
+        ? cart.map(product => (
             <div>
               <Card>
                 <Card.Body>
-                  <img src={item.imagen} alt="imagen" className="cardCarrito" />
+                  <img src={product.imagen} alt="imagen" className="cardCarrito" />
                   <br />
-                  <b>{item.titulo}</b> <br />
-                  $ {item.precio} <br />
-                  {item.cantidad} <br />
-                  <button onClick={() => removeItem(item.id)}>
+                  <b>{product.titulo}</b> <br />
+                  $ {product.precio} <br />
+                  {product.cantidad} <br />
+                  <button onClick={() => removeItem(product.id)}>
                     Remover este item
                   </button>
                 </Card.Body>

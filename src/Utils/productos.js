@@ -42,7 +42,7 @@ export const productos=[
       {
         id: 6,
         titulo: "Individuales NOVAR",
-        descripción: "Individual negro con bordes definidos ",
+        descripción: "Individual negro con bordes definidos",
         precio: "500",
         imagen: "https://i.ibb.co/HK16b1g/individual-negro.jpg",   
         categorias: "individuales"

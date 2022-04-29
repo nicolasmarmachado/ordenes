@@ -3,7 +3,7 @@ import "./estilos.css";
 import Button from 'react-bootstrap/Button'
 import { Cartcontext } from "./CartContext";
 
-export default function ItemCount({stock, onAdd, item}) {
+export default function ItemCount({stock, onAdd, product}) {
   const [contar, setContar]=useState(0);
 
   const {addItem}= useContext(Cartcontext);
@@ -22,7 +22,7 @@ export default function ItemCount({stock, onAdd, item}) {
   
   function handleClick(){
     onAdd(contar)
-    addItem({...item, cantidad: contar})
+    addItem({...product, cantidad: contar})
   }
 
   return (

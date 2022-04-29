@@ -6,7 +6,6 @@ import "./estilos.css";
 export default function CartWidget() {
   const {cantidadTotal }= useContext(Cartcontext);
 
-
   return (
     <>
       <div className="cartwidget"> 
