@@ -49,7 +49,8 @@ export default function Cart() {
       </div>
       <br />
       <div>
-        <button onClick={handleClickClear} className="botonFinalizar">FINALIZAR COMPRA</button>
+        {/* <button onClick={handleClickClear} className="botonFinalizar">FINALIZAR COMPRA</button> */}
+        <Link to="/formulario" className="botonFinalizar">Finalizar compra</Link>
         {/* <button onClick={handleClickClear} className="botonFinalizar">
           
         </button> */}
