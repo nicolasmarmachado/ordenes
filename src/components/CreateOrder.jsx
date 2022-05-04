@@ -1,26 +1,26 @@
-import React, { useContext,useEffect, useState } from 'react'
+// import React, { useContext,useEffect, useState } from 'react'
 // import {collection, getFirestore, addDoc, updateDoc, writeBatch} from 'firebase/firestore'
 // import { Cartcontext } from './CartContext';
 
 
-export default function CreateOrder({name, email,phone}) {
-//   const {cart, valorTotal}= useContext(Cartcontext);
-//   const [nico,setNico]=useState();
+// export default function CreateOrder({name, email,phone}) {
+//     const {cart, valorTotal}= useContext(Cartcontext);
+//     const [nico,setNico]=useState();
   
 
-//   useEffect(() => {
-//     const db = getFirestore();
-//     const batch=writeBatch()
-//     const ventas=collection(db, "ventas");
+//    useEffect(() => {
+//      const db = getFirestore();
+//      const batch=writeBatch()
+//      const ventas=collection(db, "ventas");
 
-//     const order={
-//         buyer: {name, phone, email},
-//         items: cart,
-//         total: 410
-//     }
-//     addDoc(ventas,order).then(({id})=>setNico(id))
+//    const order={
+//        buyer: {name, phone, email},
+//        items: cart,
+//        total: 410
+//      }
+//      addDoc(ventas,order).then(({id})=>setNico(id))
     
-// }, [])
+//  }, [])
 //     console.log(nico)
 
     // return 
@@ -28,7 +28,7 @@ export default function CreateOrder({name, email,phone}) {
     // Usted ha comprado: 
     // </div>
     // </>
-}
+// }
   
     // useEffect(()=>{
     //     const db = getFirestore();

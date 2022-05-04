@@ -22,12 +22,14 @@ const CartContextProvider = ({ children }) => {
 
   const clear = () => setCart([]);
 
+  const buyAll = () => setCart([]);
+
   const cantidadTotal=cart.reduce((total, product)=>total+product.cantidad, 0);
   const valorTotal=cart.reduce((total, product)=>total+(product.cantidad*product.precio), 0);
 
   return (
     <>
-      <Cartcontext.Provider value={{ cart, addItem, removeItem, clear, cantidadTotal, valorTotal}}>
+      <Cartcontext.Provider value={{ cart, addItem, removeItem, clear, cantidadTotal, valorTotal, buyAll}}>
         {children}
       </Cartcontext.Provider>
     </>

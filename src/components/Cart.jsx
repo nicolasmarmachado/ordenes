@@ -50,7 +50,7 @@ export default function Cart() {
       <br />
       <div>
         {/* <button onClick={handleClickClear} className="botonFinalizar">FINALIZAR COMPRA</button> */}
-        <Link to="/formulario" className="botonFinalizar">Finalizar compra</Link>
+        <Link to="/checkout" className="botonFinalizar">Finalizar compra</Link>
         {/* <button onClick={handleClickClear} className="botonFinalizar">
           
         </button> */}
